@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background: #121212;
+  color: #00ff00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  animation: typewriter 2s steps(20) 1 normal both;
+}
+
+#sentence {
+  border: 2px solid #00ff00;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  min-height: 60px;
+}
+
+textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background: black;
+  color: #00ff00;
+  border: 2px solid #00ff00;
+  resize: none;
+  outline: none;
+}
+
+textarea::selection {
+  background: #00ff00;
+  color: black;
+}
+
+.progress-container {
+  background: #333;
+  height: 10px;
+  border-radius: 5px;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: #00ff00;
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+#error-span {
+  text-decoration: underline red;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: black;
+  color: #00ff00;
+  border: 2px solid #00ff00;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
